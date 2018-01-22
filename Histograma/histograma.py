@@ -16,3 +16,10 @@ def convertir_llaves_a_lista(dicc):
     """Convierte las llaves del dicionario a una lista y las ordena"""
 
     return sorted(dicc.keys())
+
+
+def imprimir_histograma(dicc):
+    """Imprime un histograma a partir del diccionario"""
+
+    for i in convertir_llaves_a_lista(dicc):
+        print(i + "| " + ("*" * dicc[i]))
