@@ -23,3 +23,8 @@ def imprimir_histograma(dicc):
 
     for i in convertir_llaves_a_lista(dicc):
         print(i + "| " + ("*" * dicc[i]))
+
+
+if __name__ == "__main__":
+    texto = input("Inserte el texto: ")
+    imprimir_histograma(calc_freq_letras(texto))
