@@ -3,7 +3,7 @@ def calc_freq_letras(texto):
 
     dicc = {}
 
-    for i in texto.replace(" ", ""):
+    for i in texto.lower().replace(" ", ""):
         if i not in dicc:
             dicc[i] = 1
         else:
@@ -11,3 +11,8 @@ def calc_freq_letras(texto):
 
     return dicc
 
+
+def convertir_llaves_a_lista(dicc):
+    """Convierte las llaves del dicionario a una lista y las ordena"""
+
+    return sorted(dicc.keys())
